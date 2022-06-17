@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:orientation="vertical"
+    tools:context=".Ispitivanje">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="644dp"
+        android:background="@color/pozadina"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <ImageView
+            android:id="@+id/slika"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/p1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/kamera"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_camera" />
+
+            <CheckBox
+                android:id="@+id/checkbox_e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_e2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_e3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_e4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_e5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_e6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/tamna"></CheckBox>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSledecaSlika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/tamna"
+        android:text="Sledeca slika"
+        app:backgroundTint="@color/tamna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

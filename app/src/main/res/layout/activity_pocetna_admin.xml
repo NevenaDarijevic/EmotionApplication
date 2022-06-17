@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    tools:context=".PocetnaAdmin">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broj ispitanika:"
+        android:textColor="@color/tamna"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTacnost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <Button
+        android:id="@+id/btnTacnost"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:text="Analiza tačnosti"
+        android:textColor="@color/tamna"
+        app:backgroundTint="@color/dugme_svetlije"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <Button
+        android:id="@+id/btnUspesnost"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:text="Analiza uspešnosti"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/dugme_tamnije"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTacnost"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BROJ ISPITANIKA"
+        android:textColor="@color/tamna"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTacnost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+</androidx.constraintlayout.widget.ConstraintLayout>
